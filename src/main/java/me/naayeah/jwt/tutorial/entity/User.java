@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.Set;
 
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 @Getter
 @Setter
 @Builder
@@ -33,7 +33,7 @@ public class User {
     private String nickname;
 
     @JsonIgnore
-    @Column(name = "activted")
+    @Column(name = "activated")
     private boolean activated;
 
     /*
